@@ -1,65 +1,43 @@
 /*
-// Declearing varibles
+// GO Constants
+package main
+
+import (
+	"fmt"
+)
+
+const FNAME, LNAME = "Josiah", "Olaniyi"
+const AGE int = 21
+const GENDER string = "Male"
+const COMP string = "Dark"
+
+func main() {
+	fmt.Println(FNAME, "", LNAME) // making the name on a single line
+	fmt.Println(AGE)
+	fmt.Println(GENDER)
+	fmt.Println(COMP)
+} 
+
+// Making a new line with const
 package main
 import ("fmt")
-var a int
-var b int = 2
-var c int = 3
+const FNAME, LNAME = "Josiah", "Olaniyi" 
+const AGE =  21
+const mSTATUS = "Single"
 func main () {
-	a = 1
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-}
-
-// Declearing multiple variables
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	var a, b, c, d int = 2, 0, 0, 3
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-	fmt.Println(d)
-}
-
-// Declearing multiple with int and stirng
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	var a, b = 2, "Jojo"
-	c, d := 8, "Saturo"
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-	fmt.Println(d)
+	fmt.Println(FNAME, "\n") // Adding a space vertically
+	fmt.Println(LNAME)
+	fmt.Println(AGE)
+	fmt.Println(mSTATUS)
 } */
 
-// Declearation in Block
+// Using var
 package main
-
-import (
-	"fmt"
-)
-
+import ("fmt")
+var j, o = "Josiah", "Olaniyi"
 func main() {
-	var (
-		a int
-		b string  = "Jojo saturo BD"
-		c bool    = true
-		d float32 = 28.06
-	)
-	a = 2003
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-	fmt.Println(d)
+	fmt.Println(j, "", o, "\n") //adding extra space ("")
+	fmt.Println(o, "\n") // adding new line
+	fmt.Println(j, "\n") // same here
+	fmt.Println(o,j) // displayed inversely
 }
