@@ -1,4 +1,3 @@
-/*
 // GO Constants
 package main
 
@@ -17,7 +16,7 @@ func main() {
 	fmt.Println(GENDER)
 	fmt.Println(COMP)
 } 
-
+/*
 // Making a new line with const
 package main
 import ("fmt")
@@ -29,7 +28,8 @@ func main () {
 	fmt.Println(LNAME)
 	fmt.Println(AGE)
 	fmt.Println(mSTATUS)
-} */
+} 
+
 
 // Using var
 package main
@@ -40,4 +40,4 @@ func main() {
 	fmt.Println(o, "\n") // adding new line
 	fmt.Println(j, "\n") // same here
 	fmt.Println(o,j) // displayed inversely
-}
+} */
