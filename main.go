@@ -84,8 +84,7 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
-} */
-
+}
 
 // Using Print()
 package main
@@ -105,4 +104,20 @@ func main() {
 	fmt.Print(ABT)
 }
  //Using of Print() doesn't add space and new line automatically, you need add a string for space(" ")and also you need "\n" for new line
+*/
+//Printf() => deals with argument based on given formatting verb and print them.
+// 2 formatting verbs are:
+// 1.%v: Print value of the argument 2.%T Print type of argument
 
+package main
+
+import "fmt"
+
+func main() {
+	var i = "Josiah"
+	var h = 50
+	fmt.Printf("i has value:%v and type:%T \n",i,i) // adding i,i means we had 2 argument outside the string but inside the bracket
+	fmt.Printf("h has value:%v and type:%T",h,h) // same as this
+
+	// note: using Printf add string inside the bracket and help us make statement.
+}
