@@ -102,27 +102,65 @@
 	fmt.Print(FNAME, " ", LNAME,"\n")
 	fmt.Print(AGE, "\n")
 	fmt.Print(ABT)
-	} */
-//Using of Print() doesn't add space and new line automatically, you need add a string for space(" ")and also you need "\n" for new line
+	}
+	//Using of Print() doesn't add space and new line automatically, you need add a string for space(" ")and also you need "\n" for new line
 
-//Printf() => deals with argument based on given formatting verb and print them.
-// 2 formatting verbs are:
-// 1.%v: Print value of the argument 2.%T Print type of argument
+	//Printf() => deals with argument based on given formatting verb and print them.
+	// 2 formatting verbs are:
+	// 1.%v: Print value of the argument 2.%T Print type of argument
 
-package main
+	package main
 
-import (
-	"fmt"
-	"learning/verbs"
-)
+	import "fmt"
 
-func main() {
-	verbs.PrintVerb()
-
+	func main() {
 	var i = "Josiah"
 	var h = 50
 	fmt.Printf("i has value:%v and type:%T \n", i, i) // adding i,i means we had 2 argument outside the string but inside the bracket
 	fmt.Printf("h has value:%v and type:%T", h, h)    // same as this
 
 	// note: using Printf add string inside the bracket and help us make statement.
+	}
+	package main
+	import "fmt"
+	func main() {
+		var x = true
+		var y = 100
+		var z = "Hello"
+		fmt.Printf("x has value:%v and type:%T \n", x, x)
+		fmt.Printf("y has value:%v and type:%T \n", y, y)
+		fmt.Printf("z has value:%v and type:%T \n", z, z)
+		}
+// GO Array
+// We declare array using var,[] and type of data we want to store in the array
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var arr1 = [4]string{"Josiah", "Olaniyi", "Ade", "Oluwaseun"}
+	arr2 := [3]int{3, 2, 1}
+
+	fmt.Println(arr1)
+	fmt.Println(arr2)
+
+	// given lenght to your array
+	} */
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var arr1 = [...]string{"Josiah", "Olaniyi", "Bolanle", "Oluwaseun"}
+	arr2 := [...]int{1, 2, 3}
+
+	fmt.Println(arr1)
+	fmt.Println(arr2)
+
+	// without lenght to your array
 }
