@@ -175,9 +175,12 @@ func main() {
 	var cars = [4]string{"Benz", "Mazda", "Nissan", "Volvo"}
 	name := [...]string{"Bolanle", "Shalom", "Fortune", "Salomen"}
 
-	cars[3] = "Range-Rover"
-	name[0] = "Deborah"
+	cars[3] = "Range-Rover" // changing the array value for cars
+	name[0] = "Deborah"     // changing the array value for name
 
 	fmt.Println(cars)
 	fmt.Println(name)
+	// Printing a spec arr obj
+	fmt.Println(cars[2])
+	fmt.Println(name[1])
 }
