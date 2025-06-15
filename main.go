@@ -216,7 +216,7 @@ func main() {
 	// 5: 70 means assign 70 to 5th (4)element
 	// 2: 50 means assign 50 to 2nd (3)element
 	// 0: 55 means assign 55 to zero(1)element
-	} */
+	}
 
 // Printing lenght of an Array
 package main
@@ -231,4 +231,30 @@ func main() {
 
 	fmt.Println(len(arr1))
 	fmt.Println(len(arr2))
+} */
+
+// GO Slices
+// Creating slice with;
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	myslice1 := []int{}
+
+	fmt.Println(len(myslice1))
+	fmt.Println(cap(myslice1))
+	fmt.Println(myslice1)
+
+	// A slice with 0 len and cap
+
+	myslice2 := []string{"GO", "Slices", "Are", "Powerful"}
+
+	fmt.Println(len(myslice2))
+	fmt.Println(cap(myslice2))
+	fmt.Println(myslice2)
+
+	// A slice with 4 len and cap
 }
