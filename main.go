@@ -163,7 +163,7 @@ func main() {
 	fmt.Println(arr2)
 
 	// without lenght to your array
-	} */
+	}
 // changing array object
 package main
 
@@ -183,4 +183,20 @@ func main() {
 	// Printing a spec arr obj
 	fmt.Println(cars[2])
 	fmt.Println(name[1])
+	} */
+// Array Initializing
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	arr1 := [5]int{}              // Not intialized
+	arr2 := [5]int{1, 4, 7}       // Partially initailized
+	arr3 := [5]int{6, 8, 3, 9, 2} // fully initailized
+
+	fmt.Println(arr1)
+	fmt.Println(arr2)
+	fmt.Println(arr3)
 }
