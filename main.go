@@ -199,7 +199,7 @@ func main() {
 	fmt.Println(arr1)
 	fmt.Println(arr2)
 	fmt.Println(arr3)
-	} */
+	}
 // Initailizing Specific Element
 package main
 
@@ -211,8 +211,24 @@ func main() {
 	arr1 := [6]int{5: 70, 2: 50, 0: 55}
 
 	fmt.Println(arr1)
+	fmt.Println(arr1[0])
 
-	// 5: 70 means assign 70 to 5th element
-	// 2: 50 means assign 50 to 2nd element
-	// 0: 55 means assign 55 to zero element
+	// 5: 70 means assign 70 to 5th (4)element
+	// 2: 50 means assign 50 to 2nd (3)element
+	// 0: 55 means assign 55 to zero(1)element
+	} */
+
+// Printing lenght of an Array
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	arr1 := [...]string{"Monitor", "Gate", "Master-class", "Book", "Island"}
+	arr2 := [...]int{1, 4, 5, 7, 8, 33, 45, 70, 3, 22}
+
+	fmt.Println(len(arr1))
+	fmt.Println(len(arr2))
 }
