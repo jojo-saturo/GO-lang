@@ -147,7 +147,7 @@ func main() {
 	fmt.Println(arr2)
 
 	// given lenght to your array
-	} */
+	}
 
 package main
 
@@ -163,4 +163,21 @@ func main() {
 	fmt.Println(arr2)
 
 	// without lenght to your array
+	} */
+// changing array object
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var cars = [4]string{"Benz", "Mazda", "Nissan", "Volvo"}
+	name := [...]string{"Bolanle", "Shalom", "Fortune", "Salomen"}
+
+	cars[3] = "Range-Rover"
+	name[0] = "Deborah"
+
+	fmt.Println(cars)
+	fmt.Println(name)
 }
