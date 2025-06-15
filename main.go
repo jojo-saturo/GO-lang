@@ -183,7 +183,7 @@ func main() {
 	// Printing a spec arr obj
 	fmt.Println(cars[2])
 	fmt.Println(name[1])
-	} */
+	}
 // Array Initializing
 package main
 
@@ -199,4 +199,20 @@ func main() {
 	fmt.Println(arr1)
 	fmt.Println(arr2)
 	fmt.Println(arr3)
+	} */
+// Initailizing Specific Element
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	arr1 := [6]int{5: 70, 2: 50, 0: 55}
+
+	fmt.Println(arr1)
+
+	// 5: 70 means assign 70 to 5th element
+	// 2: 50 means assign 50 to 2nd element
+	// 0: 55 means assign 55 to zero element
 }
