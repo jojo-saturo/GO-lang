@@ -257,7 +257,7 @@ func main() {
 	fmt.Println(myslice2)
 
 	// A slice with 4 len and cap
-	} */
+	}
 
 // Creating Slice from an Array
 // var myarray = [lenght]datatype{value}
@@ -274,6 +274,38 @@ func main() {
 	myslice := arr[1:4]
 
 	fmt.Printf("myslice = %v\n", myslice)
+	// Printing the value of the arr
+
 	fmt.Printf("lenght = %d\n", len(myslice))
+	// Pirnting the lenght of the array from above
+
 	fmt.Printf("Capacity = %d\n", cap(myslice))
+	// The capacity is 5 because the slice start from 1
+	} */
+
+// Crearing a Slice with make() function
+// slice_name := make([]type, lenght, capacity)
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Assigning Capacity
+
+	myslice1 := make([]int, 5, 10)
+
+	fmt.Printf("myslice = %v\n", myslice1)
+	fmt.Printf("lenght = %d\n", len(myslice1))
+	fmt.Printf("capacity = %d\n", cap(myslice1))
+
+	// Without Assigning Capacity
+
+	myslice2 := make([]int, 7)
+
+	fmt.Printf("myslice = %v\n", myslice2)
+	fmt.Printf("lenght = %d\n", len(myslice2))
+	fmt.Printf("capacity = %d\n", cap(myslice2))
 }
