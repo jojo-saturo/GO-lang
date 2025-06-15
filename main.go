@@ -231,7 +231,7 @@ func main() {
 
 	fmt.Println(len(arr1))
 	fmt.Println(len(arr2))
-} */
+}
 
 // GO Slices
 // Creating slice with;
@@ -257,4 +257,23 @@ func main() {
 	fmt.Println(myslice2)
 
 	// A slice with 4 len and cap
+	} */
+
+// Creating Slice from an Array
+// var myarray = [lenght]datatype{value}
+// myslice := myarray [start:end]
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var arr = [6]int{3, 6, 9, 5, 7, 1}
+	myslice := arr[1:4]
+
+	fmt.Printf("myslice = %v\n", myslice)
+	fmt.Printf("lenght = %d\n", len(myslice))
+	fmt.Printf("Capacity = %d\n", cap(myslice))
 }
