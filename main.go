@@ -332,7 +332,7 @@ func main() {
 	fmt.Printf("myslice = %v\n", myslice)
 	}
 
-// Apend Element to a Slice
+// Append Element to a Slice
 // slice_name = append(slice_name, element1, element2, ...)
 
 package main
@@ -353,9 +353,9 @@ func main() {
 	fmt.Printf("myslice = %v\n", myslice1)
 	fmt.Printf("lenght = %d\n", len(myslice1))
 	fmt.Printf("capacity = %d\n", cap(myslice1))
-	}*/
+	}
 
-//Apending One Slice to another
+//Appending One Slice to another
 // slice_name := append(slice1, slice2...)
 
 package main
@@ -372,4 +372,31 @@ func main() {
 	fmt.Printf("myslice3 = %v\n", myslice3)
 	fmt.Printf("lenght = %d\n", len(myslice3))
 	fmt.Printf("capacity = %d\n", cap(myslice3))
+	} */
+
+// Change the lenght of a Slice
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	cars := [6]string{"Volvo", "Mazda", "Nissan", "Toyota", "Camry", "Lexus"}
+	fmt.Println(cars)
+	car_slice := cars[1:5] // Slice array
+	fmt.Printf("Carslice I = %v\n", car_slice)
+	fmt.Printf("lenght I = %d\n", len(car_slice))
+	fmt.Printf("capacity I = %d\n", cap(car_slice))
+
+	car_slice = cars[1:3] // Change lenght by re-slicing the array
+	fmt.Printf("Carslice II = %v\n", car_slice)
+	fmt.Printf("lenght II = %d\n", len(car_slice))
+	fmt.Printf("capacity II = %d\n", cap(car_slice))
+
+	car_slice = append(car_slice, "Jeep", "BMW", "Lambogini", "Honda") // change by append items
+	fmt.Printf("Carslice III = %v\n", car_slice)
+	fmt.Printf("lenght III = %d\n", len(car_slice))
+	fmt.Printf("capacity III = %d\n", cap(car_slice))
 }
