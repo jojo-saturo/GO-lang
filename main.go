@@ -281,7 +281,7 @@ func main() {
 
 	fmt.Printf("Capacity = %d\n", cap(myslice))
 	// The capacity is 5 because the slice start from 1
-	} */
+	}
 
 // Crearing a Slice with make() function
 // slice_name := make([]type, lenght, capacity)
@@ -308,4 +308,26 @@ func main() {
 	fmt.Printf("myslice = %v\n", myslice2)
 	fmt.Printf("lenght = %d\n", len(myslice2))
 	fmt.Printf("capacity = %d\n", cap(myslice2))
+
+	// The capacity is set to the lenght number.
+	}*/
+
+// Changing a slice element
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	myslice := []int{3, 5, 6, 4, 9}
+	myslice[2] = 7
+	myslice[3] = 9
+	myslice[4] = 11
+
+	fmt.Printf("myslice 3 (6 => 7) = %v\n", myslice[2])
+	fmt.Printf("myslice = %d\n", len(myslice))
+	fmt.Printf("myslice = %d\n", cap(myslice))
+	fmt.Printf("myslice = %v\n", myslice)
 }
