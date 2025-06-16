@@ -372,7 +372,7 @@ func main() {
 	fmt.Printf("myslice3 = %v\n", myslice3)
 	fmt.Printf("lenght = %d\n", len(myslice3))
 	fmt.Printf("capacity = %d\n", cap(myslice3))
-	} */
+	}
 
 // Change the lenght of a Slice
 
@@ -399,4 +399,27 @@ func main() {
 	fmt.Printf("Carslice III = %v\n", car_slice)
 	fmt.Printf("lenght III = %d\n", len(car_slice))
 	fmt.Printf("capacity III = %d\n", cap(car_slice))
+	} */
+
+// Memory Efficiency using copy fuction
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Original Slice
+	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
+	fmt.Printf("Original Slice = %v\n", numbers)
+	fmt.Printf("lenght = %d\n", len(numbers))
+	fmt.Printf("capacity = %d\n", cap(numbers))
+
+	//Creating copy with only numers needed
+	numbers_copy := make([]int, 5)
+	copy(numbers_copy, numbers[:5])
+	fmt.Printf("Numbers Copy = %v\n", numbers_copy)
+	fmt.Printf("lenght = %d\n", len(numbers_copy))
+	fmt.Printf("capacity = %d\n", cap(numbers_copy))
 }
