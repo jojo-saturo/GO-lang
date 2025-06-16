@@ -399,7 +399,7 @@ func main() {
 	fmt.Printf("Carslice III = %v\n", car_slice)
 	fmt.Printf("lenght III = %d\n", len(car_slice))
 	fmt.Printf("capacity III = %d\n", cap(car_slice))
-	} */
+	}
 
 // Memory Efficiency using copy fuction
 
@@ -416,10 +416,33 @@ func main() {
 	fmt.Printf("lenght = %d\n", len(numbers))
 	fmt.Printf("capacity = %d\n", cap(numbers))
 
-	//Creating copy with only numers needed
+	//Creating copy with only numbers needed
 	numbers_copy := make([]int, 5)
 	copy(numbers_copy, numbers[:5])
 	fmt.Printf("Numbers Copy = %v\n", numbers_copy)
 	fmt.Printf("lenght = %d\n", len(numbers_copy))
 	fmt.Printf("capacity = %d\n", cap(numbers_copy))
+	} */
+
+// GO Operator
+// + operator for addition
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var a = 10 + 39
+	fmt.Println(a)
+
+	var (
+		sum1 = 30 + 66
+		sum2 = sum1 + 38
+		sum3 = sum2 + 100
+		sum4 = sum3 + sum3
+	)
+	fmt.Println(sum4)
+
 }
