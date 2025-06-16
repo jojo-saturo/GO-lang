@@ -310,7 +310,7 @@ func main() {
 	fmt.Printf("capacity = %d\n", cap(myslice2))
 
 	// The capacity is set to the lenght number.
-	}*/
+	}
 
 // Changing a slice element
 
@@ -327,7 +327,49 @@ func main() {
 	myslice[4] = 11
 
 	fmt.Printf("myslice 3 (6 => 7) = %v\n", myslice[2])
-	fmt.Printf("myslice = %d\n", len(myslice))
-	fmt.Printf("myslice = %d\n", cap(myslice))
+	fmt.Printf("lenght = %d\n", len(myslice))
+	fmt.Printf("capacity = %d\n", cap(myslice))
 	fmt.Printf("myslice = %v\n", myslice)
+	}
+
+// Apend Element to a Slice
+// slice_name = append(slice_name, element1, element2, ...)
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	myslice1 := []string{"Book", "Maximize", "Root", "Domain"}
+	fmt.Printf("myslice = %v\n", myslice1)
+	fmt.Printf("lenght = %d\n", len(myslice1))
+	fmt.Printf("capacity = %d\n", cap(myslice1))
+
+	// Appending to the the element
+
+	myslice1 = append(myslice1, "Loyalty", "Universe")
+	fmt.Printf("myslice = %v\n", myslice1)
+	fmt.Printf("lenght = %d\n", len(myslice1))
+	fmt.Printf("capacity = %d\n", cap(myslice1))
+	}*/
+
+//Apending One Slice to another
+// slice_name := append(slice1, slice2...)
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	myslice1 := []int{2, 4, 6}
+	myslice2 := []int{3, 5, 7}
+	myslice3 := append(myslice1, myslice2...)
+
+	fmt.Printf("myslice3 = %v\n", myslice3)
+	fmt.Printf("lenght = %d\n", len(myslice3))
+	fmt.Printf("capacity = %d\n", cap(myslice3))
 }
